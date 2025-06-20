@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flappybird
-          image: ruben60/pokemon
+          image: sevenajay/mario
           ports:
             - name: http
               containerPort: 8080
