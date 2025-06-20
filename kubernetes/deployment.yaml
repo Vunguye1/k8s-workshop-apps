@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: whoami
-  namespace: Vunguye1
+  namespace: vunguye1
 spec:
   replicas: 3
   selector:
