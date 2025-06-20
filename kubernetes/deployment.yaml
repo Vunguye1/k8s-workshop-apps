@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flappybird
+  name: idk
   namespace: vunguye1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flappybird
+      app: idk
   template:
     metadata:
       labels:
-        app: flappybird
+        app: idk
     spec:
       containers:
-        - name: flappybird
-          image: sevenajay/mario
+        - name: idk
+          image: worldhosts/game
           ports:
             - name: http
               containerPort: 8080
