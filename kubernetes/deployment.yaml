@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: pacman
-          image: https://shuguet.github.io/pacman/
+          image: ghcr.io/shuguet/pacman:latest
           ports:
             - name: http
               containerPort: 8080
