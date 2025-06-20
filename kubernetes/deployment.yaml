@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: idk
-          image: pengbai/docker-supermario
+          image: alexwhen/docker-2048
           ports:
             - name: http
               containerPort: 8080
