@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: idk
-          image: binhdocker/game
+          image: pengbai/docker-supermario
           ports:
             - name: http
               containerPort: 8080
