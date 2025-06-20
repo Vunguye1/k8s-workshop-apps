@@ -9,7 +9,7 @@ resources:
   - http-route.yaml
 
 configMapGenerator:
-  - name: pacman-config
+  - name: 2048-config
     namespace: vunguye1
     literals:
-      - pacman_PORT_NUMBER=8080
+      - 2048_PORT_NUMBER=8080

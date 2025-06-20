@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pacman
+  name: 2048
   namespace: vunguye1
 spec:
   type: ClusterIP
   selector:
-    app: pacman
+    app: 2048
   ports:
     - name: web
       port: 80
