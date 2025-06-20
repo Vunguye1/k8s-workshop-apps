@@ -2,30 +2,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 2048
+  name: flappybird
   namespace: vunguye1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: 2048
+      app: flappybird
   template:
     metadata:
       labels:
-        app: 2048
+        app: flappybird
     spec:
       containers:
-        - name: 2048
-          image: ghcr.io/daocloud/dao-2048:v1.4.1
+        - name: flappybird
+          image: bhargavbunny94/flappybird
           ports:
             - name: http
               containerPort: 8080
           envFrom:
             - configMapRef:
-                name: 2048-config
+                name: whoami-config
           resources:
             requests:
               cpu: 10m
-              memory: 100Mi
+              memory: 12Mi
             limits:
-              memory: 240Mi
+              memory: 1Gi

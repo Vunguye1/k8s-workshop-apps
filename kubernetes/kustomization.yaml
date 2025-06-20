@@ -9,7 +9,7 @@ resources:
   - http-route.yaml
 
 configMapGenerator:
-  - name: 2048-config
+  - name: whoami-config
     namespace: vunguye1
     literals:
-      - 2048_PORT_NUMBER=8080
+      - WHOAMI_PORT_NUMBER=8080
