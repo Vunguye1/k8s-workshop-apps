@@ -2,27 +2,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: whoami
+  name: pacman
   namespace: vunguye1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: whoami
+      app: pacman
   template:
     metadata:
       labels:
-        app: whoami
+        app: pacman
     spec:
       containers:
-        - name: whoami
-          image: ghcr.io/traefik/whoami:latest
+        - name: pacman
+          image: https://shuguet.github.io/pacman/
           ports:
             - name: http
               containerPort: 8080
           envFrom:
             - configMapRef:
-                name: whoami-config
+                name: pacman-config
           resources:
             requests:
               cpu: 10m
