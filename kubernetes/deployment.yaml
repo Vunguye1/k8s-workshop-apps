@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flappybird
-          image: pengbai/docker-supermario
+          image: sontungbk85/flappy-bird
           ports:
             - name: http
               containerPort: 8080
