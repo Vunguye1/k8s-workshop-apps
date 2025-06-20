@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flappybird
-          image: sontungbk85/flappy-bird
+          image: pokeapi/pokeapi
           ports:
             - name: http
               containerPort: 8080
